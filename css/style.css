@@ -352,7 +352,7 @@ nav.open .links {
 }
 
 .header-content .image .img-element {
-  max-width: 750px;
+  max-width: 600px;
 }
 
 header .points1 {
@@ -1137,6 +1137,15 @@ header .circle {
   font-size: 1.3rem;
   display: inline-block;
 }
+
+.info-text a {
+  color: #000;
+}
+
+.contact-icon i {
+  color: #fff;
+}
+
 
 .contact-form .title:after {
   display: none;

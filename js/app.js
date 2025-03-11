@@ -99,3 +99,53 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
   },
 });
+
+
+
+//Lógica para mostrar mais skills
+document.getElementById('show-more-skills').addEventListener('click', function(event) {
+  event.preventDefault();
+  const skillsContainer = document.getElementById('skills');
+  const newSkills = `
+    <div class="skill react">
+      <h3 class="skill-title">React</h3>
+      <div class="skill-bar">
+        <div class="skill-progress" data-progress="75%"></div>
+      </div>
+    </div>
+    <div class="skill nodejs">
+      <h3 class="skill-title">Node.js</h3>
+      <div class="skill-bar">
+        <div class="skill-progress" data-progress="65%"></div>
+      </div>
+    </div>
+
+  `;
+  
+  // Aqui ele verifica se as skills já estão visíveis
+  const existingSkills = skillsContainer.querySelector('.skill.react');
+  
+  if (existingSkills) {
+    // Remove skills visiveis
+    existingSkills.remove();
+    skillsContainer.querySelector('.skill.nodejs').remove();
+  } else {
+    
+    skillsContainer.insertAdjacentHTML('beforeend', newSkills);
+  }
+});
+
+
+document.getElementById("submitArrow").addEventListener("click", function (event) {
+  event.preventDefault(); 
+
+  let emailInput = document.getElementById("emailInput").value;
+  let errorMessage = document.getElementById("errorMessage");
+
+  if (!emailInput || !emailInput.includes("@") || !emailInput.includes(".")) {
+    errorMessage.style.display = "block";
+  } else {
+    errorMessage.style.display = "none";
+    alert("Email enviado com sucesso!"); //
+  }
+});
