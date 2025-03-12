@@ -1,3 +1,6 @@
+//DevNataVaz
+
+
 const filter_btns = document.querySelectorAll(".filter-btn");
 const skills_wrap = document.querySelector(".skills");
 const skills_bars = document.querySelectorAll(".skill-progress");
@@ -102,7 +105,7 @@ var mySwiper = new Swiper(".swiper-container", {
 
 
 
-//Lógica para mostrar mais skills
+
 document.getElementById('show-more-skills').addEventListener('click', function(event) {
   event.preventDefault();
   const skillsContainer = document.getElementById('skills');
@@ -122,11 +125,9 @@ document.getElementById('show-more-skills').addEventListener('click', function(e
 
   `;
   
-  // Aqui ele verifica se as skills já estão visíveis
-  const existingSkills = skillsContainer.querySelector('.skill.react');
   
+  const existingSkills = skillsContainer.querySelector('.skill.react');
   if (existingSkills) {
-    // Remove skills visiveis
     existingSkills.remove();
     skillsContainer.querySelector('.skill.nodejs').remove();
   } else {
@@ -149,3 +150,26 @@ document.getElementById("submitArrow").addEventListener("click", function (event
     alert("Email enviado com sucesso!"); //
   }
 });
+
+
+function copiarEmail(event, element) {
+  event.preventDefault(); 
+
+  const email = "contato.natavaz@gmail.com";
+  navigator.clipboard.writeText(email);
+
+  const tooltip = element.nextElementSibling;
+  tooltip.classList.add("show");
+
+  setTimeout(() => {
+      tooltip.classList.remove("show");
+  }, 2000);
+}
+
+
+console.log("Estou esperando meu contrato!");
+console.log("Estou esperando meu contrato!");
+console.log("Estou esperando meu contrato!");
+console.log("Estou esperando meu contrato!");
+console.log("Estou esperando meu contrato!");
+console.log("Estou esperando meu contrato!");

@@ -415,9 +415,6 @@ header .circle {
   opacity: 0.06;
 }
 
-/* End header */
-
-/* Services */
 
 .cards {
   display: flex;
@@ -505,9 +502,6 @@ header .circle {
   pointer-events: none;
 }
 
-/* End Services */
-
-/* Portfolio */
 
 .portfolio {
   position: relative;
@@ -620,7 +614,7 @@ header .circle {
 
 .gallery-image img {
   position: absolute;
-  height: 115%;
+  height: 90%;
   width: initial;
   top: 50%;
   left: 50%;
@@ -697,9 +691,9 @@ header .circle {
   justify-content: center;
 }
 
-/* End Portfolio */
 
-/* About */
+
+
 
 .about {
   overflow: hidden;
@@ -769,9 +763,8 @@ header .circle {
   opacity: 0.1;
 }
 
-/* End About */
 
-/* Records */
+
 
 .records {
   position: relative;
@@ -858,9 +851,7 @@ header .circle {
   right: 50%;
 }
 
-/* End Records */
 
-/* Blog */
 
 .blog-wrapper {
   display: flex;
@@ -963,14 +954,8 @@ header .circle {
   opacity: 0.15;
 }
 
-/* End Blog */
 
-/* Testimonials */
 
-.testimonials {
-  background-color: var(--light-two);
-  overflow: hidden;
-}
 
 .testi-content {
   margin-top: 6rem;
@@ -1050,9 +1035,8 @@ header .circle {
   display: none;
 }
 
-/* End Testimonials */
 
-/* Contact */
+
 
 .contact {
   position: relative;
@@ -1196,9 +1180,7 @@ header .circle {
   margin-top: 0.6rem;
 }
 
-/* End Contact */
 
-/* Hire me */
 
 .hireme {
   padding: 12rem 0;
@@ -1217,9 +1199,9 @@ header .circle {
   margin: 0 auto 1.6rem auto;
 }
 
-/* End Hire me */
 
-/* Footer */
+
+
 
 .footer {
   background-color: #222;
@@ -1400,9 +1382,28 @@ header .circle {
   }
 }
 
-/* End Footer */
 
-/* Responsive */
+.tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.tooltip.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 
 @media (max-width: 1280px) {
   .text {
@@ -2209,4 +2210,4 @@ header .circle {
   }
 }
 
-/* End Responsive */
+
