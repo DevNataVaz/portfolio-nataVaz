@@ -9,7 +9,7 @@
   --light-three: #f6f7fb;
 }
 
-/* Genral Styles */
+
 
 *,
 *::before,
@@ -214,9 +214,9 @@ img {
   font-size: 1rem;
 }
 
-/* End Genral Styles */
 
-/* Header */
+
+
 
 header {
   width: 100%;
@@ -276,6 +276,19 @@ nav .container {
   color: var(--light-one);
   background-color: #6b44e0;
 }
+
+.social-media-header a {
+  color: #7b7b7b;
+  font-size: 1.5rem;
+  position: relative;
+  left: 250px;
+  transition: 0.5s;
+}
+
+.social-media-header a:hover {
+  color: var(--main-color);
+}
+
 
 .hamburger-menu {
   width: 2.7rem;
